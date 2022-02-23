@@ -1,0 +1,27 @@
+package selenium.test;
+
+import org.testng.annotations.Test;
+
+public class TestPractice2 {
+	
+
+	@Test(groups = {"Regression","Smoke"})
+	public void setUpBrowserTwo() {
+		
+		System.out.println("This is the first test method to setup browser Two");
+		
+	}
+	
+	@Test(groups = {"Demo"})
+	public void lunchAppTwo() {
+		
+		System.out.println("This is the method to launch application Two");
+	}
+	
+	@Test(groups = {"Demo"})
+	public void loginToAppTwo() {
+		System.out.println("This is the test to login to application Two");
+	}
+	
+
+}

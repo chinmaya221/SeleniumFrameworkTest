@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SeleniumFrameworkTest/testng.xml&apos; to &apos;Smoke.xml&apos;" description="Rename resource &apos;testng.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="testng.xml" name="Smoke.xml" stamp="1645532882831" updateReferences="true"/>
+</session>

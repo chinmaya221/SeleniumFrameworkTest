@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="auto.LoginTest">
+        <methods>
+          <include name="testLoginWithInValidCredentials"/>
+          <include name="testLoginWithValidCredentials"/>
+          <include name="testSubmitButtonDisabledAfterLoadPage"/>
+        </methods>
+      </class> <!-- auto.LoginTest -->
+      <class name="auto.DataProviderTest">
+        <methods>
+          <include name="testDataProviderWithExcel"/>
+          <include name="testDataProviderWithTestNgAnnotation"/>
+        </methods>
+      </class> <!-- auto.DataProviderTest -->
+      <class name="auto.CopyOfDataProviderTest">
+        <methods>
+          <include name="testDataProviderWithTestNgAnnotation"/>
+          <include name="oneTimeSetUp"/>
+          <include name="testDataProviderWithExcel"/>
+        </methods>
+      </class> <!-- auto.CopyOfDataProviderTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

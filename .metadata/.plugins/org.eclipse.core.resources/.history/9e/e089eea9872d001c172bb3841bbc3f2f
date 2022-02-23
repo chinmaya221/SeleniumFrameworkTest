@@ -1,0 +1,22 @@
+package com.test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Test1 {
+
+	@Test
+	public void login() {
+
+	    WebDriverManager.edgedriver().setup();
+		WebDriver driver = new EdgeDriver();
+		String expectedURL = "http://demo.guru99.com/test/newtours/";
+		driver.get(expectedURL);
+		String urL=driver.getCurrentUrl();
+		Assert.assertEquals(urL,expectedURL);
+	}
+}
